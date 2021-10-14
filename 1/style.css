@@ -1,0 +1,674 @@
+/*reset для html и body*/
+html,
+body {
+    min-width: 1000px;
+    box-sizing: border-box;
+}
+
+/*reset для всего кода*/
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* основной заголовк*/
+h1 {
+    float: left;
+
+    font-size: 16px;
+}
+
+/*ссылка в заголовке*/
+h1 a {
+    color: white;
+
+    border-bottom: 1px solid;
+}
+
+/*загаловок в новостидня */
+.news-main-caption {
+    padding: 27px 0 27px 18px;
+    margin: 0 0 34px;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+/*Заголовок в читаемых новостях*/
+.other-news-caption {
+    padding: 27px 0 27px 18px;
+    margin: 0 0 34px;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+/*Заголовок в курсах*/
+.rates {
+    padding: 15px 0 27px 18px;
+    margin: 0 0 20px;
+
+    font-size: 20px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/*разрешение страницы*/
+/**/
+.fixed {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/**/
+.clearfix::after {
+    display: block;
+
+    content: ' ';
+    clear: both;
+}
+
+/*верхний блок станицы*/
+.top-block {
+    padding: 20px 0;
+    display: block;
+
+    color: white;
+
+    background-color: #00122f;
+}
+
+
+/*дата и время в верхнем блоке*/
+.datetime {
+    float: right;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*лого и т.д.*/
+.middle-block {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+/*лого, дата и время, погода*/
+.left-part {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+/*дата и время*/
+.middle-time {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+/*логотип*/
+.logo {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+/**/
+.down-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+    margin-left: 20px;
+
+    color: #448ccb;
+
+    background: url(img/down-arrow.png) no-repeat right center;
+    border-bottom: 1px dashed;
+}
+
+/**/
+.data-main {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 25px;
+    margin-left: 20px;
+}
+
+/**/
+.time-main {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    margin-left: 20px;
+
+    background: url(img/clock-main.png) no-repeat left center;
+}
+
+/**/
+.cloud {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding: 5px 0px 2px 35px;
+
+    background: url(img/cloudy.png) no-repeat;
+}
+
+/**/
+.right-part {
+    float: right;
+}
+
+/**/
+.search-right {
+    float: right;
+}
+
+/**/
+input[type="search"] {
+    width: 240px;
+    height: 45px;
+    padding-left: 30px;
+
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #f3f3f3;
+}
+
+/**/
+.button-search {
+    float: right;
+    height: 45px;
+    padding-left: 35px;
+
+    background-position: center;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 0px 30px 30px 0;
+}
+
+/**/
+.bottom-block {
+    padding-bottom: 32px;
+}
+
+/*панель навигации*/
+.nav {
+    float: left;
+    padding-left: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    font-size: 0;
+}
+
+/*список навигации*/
+.nav li {
+    display: inline-block;
+}
+
+/*ссылки в навигации*/
+.nav a {
+    position: relative;
+
+    display: inline-block;
+
+    font-size: 15px;
+    color: #000;
+}
+
+.nav a:hover {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+/*слеш в навигации*/
+.nav a:after {
+    padding: 0 20px;
+
+    color: rgba(145, 145, 159, 0.8);
+
+    content: '/';
+}
+
+/*контейнер с новостями*/
+.main-conteiner {
+    padding: 50px;
+    background-image: url(img/central-bg-top.png);
+    background-repeat: repeat-x;
+    background-color: #f9f9f9;
+
+}
+
+/*секция новостей*/
+.news-layout {
+    padding-top: 20px;
+}
+
+/*заголовок новостей*/
+.news-main-caption {
+    padding-left: 18px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+
+    border-bottom: 1px #e6e6e6 solid;
+}
+
+/*aside*/
+.col-left {
+    float: left;
+    width: 25%;
+
+    background-color: #fff;
+}
+
+/**/
+.news-items {
+    margin-top: 20px;
+}
+
+/*article*/
+.news-item {
+    position: relative;
+
+    padding-left: 18px;
+    padding-bottom: 13px;
+}
+
+/*текст новостей в aside*/
+.news-item-txt {
+    min-height: 60px;
+
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*коментарии , категории , время*/
+.news-item-props {
+    margin-top: 13px;
+
+    font-size: 0;
+}
+
+/*категории новостей*/
+.category {
+    display: inline-block;
+    width: 104px;
+    padding-bottom: 20px;
+
+    color: rgba(145, 145, 159, 0.8);
+    font-size: 12px;
+}
+
+/*время в новостях*/
+.news-time {
+    display: inline-block;
+
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/*коментарии в новостях*/
+.news-comments-count {
+    display: inline-block;
+    margin-left: 20px;
+
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/*текст "все новости"*/
+.all-news {
+    padding-top: 20px;
+    padding-bottom: 26px;
+
+    text-align: center;
+}
+
+.all-news a:hover {
+    color: white;
+}
+
+/*кнопка "все новости"*/
+.all-but {
+    display: inline-block;
+    padding: 13px 48px;
+
+    color: #448ccb;
+    font-weight: 400;
+    font-size: 14px;
+
+    -webkit-border-radius: 23px;
+    border-radius: 23px;
+    border: 1px solid #448ccb;
+}
+
+.all-but:hover {
+    background-color: #448ccb;
+}
+
+/*центральная колонка новостей*/
+.col-centr {
+    float: left;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.main-layer {
+    position: relative;
+}
+
+.main-post-txt {
+    position: absolute;
+    bottom: 43px;
+    left: 20px;
+}
+
+.caption {
+    max-width: 360px;
+    margin-bottom: 20px;
+
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.category-main {
+    display: inline-block;
+    width: 104px;
+    margin-bottom: 16px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.props {
+    margin-bottom: 20px;
+
+    font-size: 0;
+}
+
+.date {
+    display: inline-block;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.time {
+    display: inline-block;
+    margin-left: 22px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.main-layer img {
+    opacity: .8;
+}
+
+.main-layer img:hover {
+    opacity: 1;
+}
+
+.news-item-layout {
+    margin-top: 18px;
+}
+
+.image {
+    height: 144px;
+}
+
+.news-item-layer {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+
+/*отсупы справа у чётных*/
+.news-item-layer:nth-child(2n) {
+    margin-right: 0;
+}
+
+.news-item-text {
+    margin-top: 3px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: black;
+}
+
+.right-col {
+    float: left;
+    width: 25%;
+}
+
+.baner {
+    margin-bottom: 20px;
+}
+
+.baner:nth-child(2n) {
+    margin-bottom: 0;
+}
+
+.readable-news {
+    margin-top: 20px;
+}
+
+.first-post {
+    position: relative;
+
+    float: left;
+    width: 58%;
+}
+
+.first-post-txt {
+    position: absolute;
+
+    bottom: 40px;
+    left: 20px;
+}
+
+.first-post img {
+    opacity: .8;
+}
+
+.first-post img:hover {
+    opacity: 1;
+}
+
+.descrip {
+    display: inline-block;
+    padding-bottom: 15px;
+
+    font-weight: 400;
+    color: rgba(145, 145, 159, 0.8);
+    font-size: 12px;
+}
+
+.other-news {
+    float: left;
+    width: 41%;
+
+    background-color: #fff;
+}
+
+.footer {
+    padding-top: 50px;
+
+    background-color: #00122f;
+}
+
+.footer-top {
+    padding-bottom: 30px;
+}
+
+.footer-menu {
+    float: left;
+    width: 43%;
+}
+
+.list {
+    float: left;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-menu ul li a {
+    display: inline-block;
+    margin-bottom: 13px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.list2 {
+    margin-left: 50px;
+}
+
+.footer-info {
+    float: left;
+    width: 35%;
+
+}
+
+.footer-info ul {
+    margin-top: 16px;
+
+    list-style-type: none;
+}
+
+.footer-info ul li a {
+    display: inline-block;
+    margin-bottom: 13px;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-contact {
+    float: left;
+    width: 22%;
+
+    color: #fff;
+}
+
+.vk {
+    background: url(img/vk.png) no-repeat left center;
+
+}
+
+.fb {
+    background: url(img/fb.png) no-repeat left center;
+}
+
+.tw {
+    background: url(img/tw.png) no-repeat left center;
+}
+
+.inst {
+    background: url(img/inst.png) no-repeat left center;
+}
+
+.social ul {
+    font-size: 0;
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.tel-mail {
+    margin-top: 40px;
+}
+
+.tel {
+    padding-left: 10px;
+
+    background: url(img/tel.png) no-repeat left center;
+
+}
+
+.mail {
+    padding-left: 10px;
+
+    background: url(img/mail.png) no-repeat left center;
+}
+
+.tel-mail a {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.tel-mail a span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-bottom {
+    padding-top: 17px;
+    padding-bottom: 19px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+
+    border-top: 1px #26364e solid;
+}
+
+.rate {
+    background-color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.rate-usd {
+    padding-left: 20px;
+}
+.rate-rub {
+    padding-left: 20px;
+}
